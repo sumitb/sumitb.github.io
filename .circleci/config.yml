@@ -45,6 +45,8 @@ jobs:
 
       # Set some variables to add to the commit message
       - run: cd $TARGET_BUILD_DIR && git config --global user.email "builds@circleci.com" && git config --global user.name "CircleCI Bot"
+      - run: cd $TARGET_BUILD_DIR && git commit -m "Automated CircleCI build $CIRCLE_BUILD_NUM published to Github Pages"
+      - run: cd $TARGET_BUILD_DIR && git push -f origin $TARGET_BRANCH
 
       - deploy:
           name: Deploy static pages to Github Pages
