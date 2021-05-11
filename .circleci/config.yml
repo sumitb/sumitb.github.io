@@ -37,11 +37,11 @@ jobs:
             - "88:0f:18:47:6c:8f:08:12:a3:66:ae:3c:0e:c1:37:34"
 
       # Get github pages repo
-      - run: git clone --branch=$TARGET_BRANCH git@github.com:$TARGET_REPO $TARGET_BUILD_DIR
+      - run: git clone --branch=$TARGET_BRANCH git@github.com:$TARGET_REPO ${TARGET_BUILD_DIR}
 
       # Switch directoty to gh-pages repo
-      - run: cd $TARGET_BUILD_DIR
-      - run: rsync -r --exclude=.git --delete public/ ./
+      - run: cd ${TARGET_BUILD_DIR}
+      - run: rsync -r --exclude=.git --delete ${HUGO_BUILD_DIR} ${TARGET_BUILD_DIR}
       - run: git add -f .
 
       # Set some variables to add to the commit message
