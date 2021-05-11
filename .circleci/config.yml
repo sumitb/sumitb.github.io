@@ -41,7 +41,7 @@ jobs:
 
       # Switch directoty to gh-pages repo
       - run: cd $TARGET_BUILD_DIR
-      - run: rsync -r --exclude=.git --delete $HUGO_BUILD_DIR/ ./
+      - run: rsync -r --exclude=.git --delete public/ ./
       - run: git add -f .
 
       # Set some variables to add to the commit message
