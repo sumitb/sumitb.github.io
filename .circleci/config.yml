@@ -39,19 +39,18 @@ jobs:
       # Get github pages repo
       - run: git clone --branch=$TARGET_BRANCH git@github.com:$TARGET_REPO ${TARGET_BUILD_DIR}
 
-      # Switch directoty to gh-pages repo
-      - run: cd ${TARGET_BUILD_DIR}
+      # Copy hugo build files to gh-pages repo
       - run: rsync -r --exclude=.git --delete ${HUGO_BUILD_DIR} ${TARGET_BUILD_DIR}
-      - run: git add -f .
+      - run: cd $TARGET_BUILD_DIR && git add -f .
 
       # Set some variables to add to the commit message
-      - run: git config --global user.email "builds@circleci.com" && git config --global user.name "CircleCI Bot"
+      - run: cd $TARGET_BUILD_DIR && git config --global user.email "builds@circleci.com" && git config --global user.name "CircleCI Bot"
 
       - run: |
             if [ "${CIRCLE_BRANCH}" = "main" ]; then
-              if git commit -m "Automated CircleCI build $CIRCLE_BUILD_NUM published to Github Pages" ; then
+              if cd $TARGET_BUILD_DIR && git commit -m "Automated CircleCI build $CIRCLE_BUILD_NUM published to Github Pages" ; then
                 # Push the generated files back to github
-                git push -f origin $TARGET_BRANCH
+                cd $TARGET_BUILD_DIR && git push -f origin $TARGET_BRANCH
               else
                 echo "Content not changed, nothing to deploy"
               fi
