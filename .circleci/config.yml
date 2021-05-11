@@ -6,10 +6,13 @@ jobs:
       - image: cibuilds/hugo:latest
     working_directory: ~/hugo
     environment:
+      TARGET_BRANCH: master
+      TARGET_REPO: sumitb/sumitb.github.io.git
+      TARGET_BUILD_DIR: ~/hugo/gh-pages
       HUGO_BUILD_DIR: ~/hugo/public
     steps:
-      # install git
-      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends git 
+      # install git & rsync
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends git rsync 
 
       # checkout the repository
       - checkout
@@ -18,7 +21,7 @@ jobs:
       - run: git submodule sync && git submodule update --init
 
       # Link the public dir to the gh-pages branch
-      - run: rm -fr $HUGO_BUILD_DIR && git worktree add -B gh-pages $HUGO_BUILD_DIR origin/gh-pages
+      - run: rm -fr $HUGO_BUILD_DIR
 
       # build with Hugo
       - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
@@ -29,8 +32,31 @@ jobs:
             htmlproofer $HUGO_BUILD_DIR --allow-hash-href --check-html \
             --empty-alt-ignore --disable-external
 
-      # Set some variables to add to the commit message
-      - run: git config --global user.email "noreply@sumitb.github.io" && git config --global user.name "CircleCI Bot"
+      - add_ssh_keys:
+          fingerprints:
+            - "88:0f:18:47:6c:8f:08:12:a3:66:ae:3c:0e:c1:37:34"
 
-      # Push the generated files back to github
-      - run: cd $HUGO_BUILD_DIR && git add --all && git commit -m "Automated publish to gh-pages [ci skip]" && git push
+      # Get github pages repo
+      - run: git clone --branch=$TARGET_BRANCH git@github.com/$TARGET_REPO $TARGET_BUILD_DIR
+
+      # Switch directoty to gh-pages repo
+      - run: cd $TARGET_BUILD_DIR
+      - run: rsync -r --exclude=.git --delete ../$HUGO_BUILD_DIR/ ./
+      - run: git add -f .
+
+      # Set some variables to add to the commit message
+      - run: git config --global user.email "builds@circleci.com" && git config --global user.name "CircleCI Bot"
+
+      - deploy:
+          name: Deploy static pages to Github Pages
+          command: |
+            if [ "${CIRCLE_BRANCH}" = "master" ]; then
+              if git commit -m "Automated CircleCI build $CIRCLE_BUILD_NUM published to Github Pages" ; then
+                # Push the generated files back to github
+                git push -f origin $TARGET_BRANCH
+              else
+                echo "Content not changed, nothing to deploy"
+              fi
+            else
+              echo "Not master branch, dry run only"
+            fi
