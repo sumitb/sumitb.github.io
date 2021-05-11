@@ -47,9 +47,7 @@ jobs:
       # Set some variables to add to the commit message
       - run: git config --global user.email "builds@circleci.com" && git config --global user.name "CircleCI Bot"
 
-      - deploy:
-          name: Deploy static pages to Github Pages
-          command: |
+      - run: |
             if [ "${CIRCLE_BRANCH}" = "main" ]; then
               if git commit -m "Automated CircleCI build $CIRCLE_BUILD_NUM published to Github Pages" ; then
                 # Push the generated files back to github
