@@ -40,7 +40,7 @@ jobs:
       - run: git clone --branch=$TARGET_BRANCH git@github.com:$TARGET_REPO ${TARGET_BUILD_DIR}
 
       # Copy hugo build files to gh-pages repo
-      - run: rsync -r --exclude=.git --delete ${HUGO_BUILD_DIR} ${TARGET_BUILD_DIR}
+      - run: rsync -r --exclude=.git --delete ${HUGO_BUILD_DIR}/ ${TARGET_BUILD_DIR}
       - run: cd $TARGET_BUILD_DIR && git add -f .
 
       # Set some variables to add to the commit message
