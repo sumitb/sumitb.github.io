@@ -50,7 +50,7 @@ jobs:
           name: Deploy static pages to Github Pages
           command: |
             if [ "${CIRCLE_BRANCH}" = "main" ]; then
-              if [ cd "${TARGET_BUILD_DIR}" && git commit -m "Automated CircleCI build $CIRCLE_BUILD_NUM published to Github Pages" ] ; then
+              if [ cd "${TARGET_BUILD_DIR}" ] && [ git commit -m "Automated CircleCI build $CIRCLE_BUILD_NUM published to Github Pages" ] ; then
                 # Push the generated files back to github
                 cd $TARGET_BUILD_DIR && git push -f origin $TARGET_BRANCH
               else
