@@ -10,7 +10,7 @@ jobs:
         type: string
         default: main
       semgrep_deployment_id:
-        type: integer
+        type: string
         default: SEMGREP_DEPLOYMENT_ID
     environment:
       SEMGREP_REPO_NAME: << parameters.repo_path >>
