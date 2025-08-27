@@ -1,7 +1,7 @@
 +++
-title = "Pre-emptive Kernel for x86_64 Architecture"
-description = "Complete operating system kernel implementation with advanced scheduling"
-date = 2015-01-01
+title = "⭐ Pre-emptive Kernel for x86_64 Architecture"
+description = "Complete operating system kernel implementation with advanced scheduling, COW fork, preemptive scheduler, and system calls"
+date = 2015-05-01
 +++
 
 ## Project Overview
