@@ -21,6 +21,7 @@ cover = "images/cover.png"
 ## save the image you want to use as background picture in directory "./static/images"
 logo = "images/logo.png"
 ## save the image you want to use as website logo in directory "./static/images"(delete this line when editing)
+favicon = "/favicon.svg"
 githubName = "sumitb"
 linkedinName = "sumitbindal"
 #email = "your email"
@@ -54,8 +55,15 @@ pre = "<br />"
 url = "/"
 
 [[menu.main]]
+name = "Resume"
+weight = 10
+identifier = "resume"
+pre = "<br />"
+url = "/resume"
+
+[[menu.main]]
 name = "Contact"
-weight = 0
+weight = 20
 identifier = "contact" # this button will refer to a markdown file named "contact" in the content folder
 pre = "<br />"
 url = "/contact"
