@@ -5,7 +5,8 @@ theme = "hugo-coder"
 Copyright = "© Sumit Bindal 2021"
 canonifyurls = true
 defaultcontentlanguage = "en"
-paginate = 20
+[pagination]
+pagerSize = 20
 
 pygmentsstyle = "bw"
 pygmentscodefences = true
