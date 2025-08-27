@@ -31,7 +31,7 @@ cover = "images/cover.png"
 logo = "images/logo.png"
 ## save the image you want to use as website logo in directory "./static/images"(delete this line when editing)
 favicon = "images/favicon.svg"
-avatar = "images/avatar.jpg"
+avatarURL = "images/avatar.jpg"
 githubName = "sumitb"
 linkedinName = "sumitbindal"
 #email = "your email"
