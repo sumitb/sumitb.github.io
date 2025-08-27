@@ -13,10 +13,10 @@ Senior Software Engineer with 12+ years of experience building distributed syste
 <details open>
 <summary><strong><img src="/images/oracle-logo.svg" width="20" height="20" style="vertical-align:middle;"> Oracle Inc.</strong> 📅 <em>Sept 2021–Present</em></summary>
 
-**Principal Member of Technical Staff in OCI Platform**
+**Principal Member of Technical Staff in [OCI](https://www.oracle.com/cloud/) Platform**
 
-- Led disaster recovery implementation for Visual Builder Cloud Service - PaaS managing 40K+ compute nodes across Government and commercial regions
-- Architected microservices refactor of monolithic platform, owning telemetry and monitoring service upgrade from Oracle Linux 7 to 9
+- Led disaster recovery implementation for [Visual Builder Cloud Service](https://www.oracle.com/application-development/cloud-services/visual-builder/) - PaaS managing 40K+ compute nodes across Government and commercial regions
+- Architected microservices refactor of monolithic platform, owning telemetry and monitoring service upgrade from [Oracle Linux](https://docs.oracle.com/en/operating-systems/oracle-linux/9/leapp/) 7 to 9
 - Implemented Gen1 to Gen2 migration with automated processes, enabling infrastructure modernization
 - Spearheaded incident response during P1 incidents, debugging complex system failures and identifying root causes across distributed infrastructure
 - Demonstrated full-stack expertise with code contributions spanning control plane, data plane, UI console, API specifications, DevOps automation, and infrastructure as code
@@ -30,8 +30,8 @@ Senior Software Engineer with 12+ years of experience building distributed syste
 
 **Member of Technical Staff IV**
 
-- Designed and implemented multi node upgrades for Karbon Platform Services which includes system services, and kubernetes
-- Designed and implemented zero layer Secret Store service for Nutanix Xi cloud. It provides secret access, storage, management; supports high availability
+- Designed and implemented multi node upgrades for [Karbon Platform Services](https://www.nutanix.com/products/karbon) which includes system services, and Kubernetes
+- Designed and implemented zero layer Secret Store service for [Nutanix Xi cloud](https://www.nutanix.com/products/xi-cloud-services). It provides secret access, storage, management; supports high availability
 - Integrated Secret Store with IAM, deployment pipeline to enable access to secrets at the service startup
 - Reduced memory footprint by 500 MB (~2.5%) for Nutanix OS with service monitor changes, which declined the no. of CFDs
 
@@ -42,7 +42,7 @@ Senior Software Engineer with 12+ years of experience building distributed syste
 </details>
 
 <details>
-<summary><strong><i class="fa-brands fa-adobe"></i> Adobe Systems</strong> 📅 <em>May 2015–Aug 2015</em></summary>
+<summary><strong><img src="/images/adobe-logo.svg" width="20" height="20" style="vertical-align:middle;"> Adobe Systems</strong> 📅 <em>May 2015–Aug 2015</em></summary>
 
 **Security Engineer Intern in Digital Publishing Systems**
 
@@ -52,7 +52,7 @@ Senior Software Engineer with 12+ years of experience building distributed syste
 </details>
 
 <details>
-<summary><strong><i class="fa-brands fa-adobe"></i> Adobe Systems Inc.</strong> 📅 <em>June 2011–July 2014</em></summary>
+<summary><strong><img src="/images/adobe-logo.svg" width="20" height="20" style="vertical-align:middle;"> Adobe Systems Inc.</strong> 📅 <em>June 2011–July 2014</em></summary>
 
 **Software Engineer in Adobe Acrobat and Reader**
 
