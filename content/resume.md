@@ -10,8 +10,8 @@ Senior Software Engineer with 12+ years of experience building distributed syste
 
 ## Experience
 
-### Oracle Inc.
-**Software Developer 4, OCI Platform** | *Sept 2021–Present*
+<details>
+<summary><strong>Oracle Inc. | Software Developer 4 | Sept 2021–Present</strong></summary>
 
 - Led disaster recovery implementation for Visual Builder Cloud Service - PaaS managing 40K+ compute nodes across Government and commercial regions
 - Architected microservices refactor of monolithic platform, owning telemetry and monitoring service upgrade from Oracle Linux 7 to 9
@@ -19,25 +19,33 @@ Senior Software Engineer with 12+ years of experience building distributed syste
 - Spearheaded incident response during P1 incidents, debugging complex system failures and identifying root causes across distributed infrastructure
 - Demonstrated full-stack expertise with code contributions spanning control plane, data plane, UI console, API specifications, DevOps automation, and infrastructure as code
 
-### Nutanix Inc.
-**Member of Technical Staff IV** | *Feb 2016–Sept 2021*
+</details>
+
+<details>
+<summary><strong>Nutanix Inc. | Member of Technical Staff IV | Feb 2016–Sept 2021</strong></summary>
 
 - Designed and implemented multi node upgrades for Karbon Platform Services which includes system services, and kubernetes
 - Designed and implemented zero layer Secret Store service for Nutanix Xi cloud. It provides secret access, storage, management; supports high availability
 - Integrated Secret Store with IAM, deployment pipeline to enable access to secrets at the service startup
 - Reduced memory footprint by 500 MB (~2.5%) for Nutanix OS with service monitor changes, which declined the no. of CFDs
 
-### Adobe Systems
-**Security Engineer Intern, Digital Publishing Systems** | *May 2015–Aug 2015*
+</details>
+
+<details>
+<summary><strong>Adobe Systems | Security Engineer Intern | May 2015–Aug 2015</strong></summary>
 
 - Developed security dashboard for processing Qualys vulnerability reports and implemented monitoring systems for new infrastructure components
 
-### Adobe Systems Inc.
-**Software Engineer, Adobe Acrobat and Reader** | *June 2011–July 2014*
+</details>
+
+<details>
+<summary><strong>Adobe Systems Inc. | Software Engineer | June 2011–July 2014</strong></summary>
 
 - Developed framework for penetration testing of Acrobat compute only sandbox
 - Developed a distributed system for fuzzing Adobe Reader broker functions
 - Improved existing automation for triaging externally reported vulnerabilities
+
+</details>
 
 ## Education
 
@@ -63,11 +71,26 @@ Added support for private threads in Linux kernel 3.17 for SMP system. Developed
 
 ## Skills
 
-**Programming:** Python, Java, Golang, C/C++, JavaScript  
-**Technologies:** OCI, Kubernetes, Terraform, Docker, Microservices  
-**AI/ML:** Model Optimization, Performance Tuning  
-**Infrastructure:** RESTful APIs, Distributed Systems, High Availability  
-**Coursework:** Operating Systems, Storage Systems, Analysis of Algorithms, System Security, Network Security
+algorithms  
+c/c++  
+cloud infrastructure  
+devops automation  
+distributed systems  
+docker  
+golang  
+high availability  
+incident response  
+infrastructure as code  
+java  
+javascript  
+kubernetes  
+microservices  
+oci  
+performance tuning  
+python  
+restful apis  
+security  
+terraform
 
 ## Achievements
 

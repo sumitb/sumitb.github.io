@@ -12,9 +12,14 @@ pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
 author = "Sumit Bindal"
-description = "Enter your personal description"
+description = "Sr. Software Engineer, Builder"
 keywords = "blog,developer,personal"
 authorlocation = "authorlocation"
 cover = "images/cover.png"
@@ -22,6 +27,7 @@ cover = "images/cover.png"
 logo = "images/logo.png"
 ## save the image you want to use as website logo in directory "./static/images"(delete this line when editing)
 favicon = "/favicon.svg"
+avatar = "images/avatar.jpg"
 githubName = "sumitb"
 linkedinName = "sumitbindal"
 #email = "your email"
@@ -37,15 +43,15 @@ hidecolorschemetoggle = false
   weight = 1
   url = "https://github.com/sumitb/"
 [[params.social]]
-  name = "Gitlab"
-  icon = "fa fa-gitlab fa-2x"
+  name = "LinkedIn"
+  icon = "fa fa-linkedin fa-2x"
   weight = 2
-  url = "https://gitlab.com/sumitb/"
+  url = "https://linkedin.com/in/sumitbindal/"
 [[params.social]]
-  name = "Twitter"
-  icon = "fa fa-twitter fa-2x"
+  name = "BlueSky"
+  icon = "fa fa-cloud fa-2x"
   weight = 3
-  url = "https://twitter.com/sumit_bindal/"
+  url = "https://bsky.app/profile/sumitbindal.bsky.social"
 
 [[menu.main]]  # here are the buttons on the menu
 name = "Home" # Button will display as "Home"
