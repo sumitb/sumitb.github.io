@@ -30,7 +30,12 @@ All development happens on the `development` branch:
 3. **Merge PR** triggers automatic deployment via GitHub Actions
 4. **Site updates** live at https://sumitb.github.io
 
-## Theme Updates
+## Configuration Notes
+
+### Unsafe HTML Enabled
+This site has `unsafe = true` enabled in `config.toml` under `[markup.goldmark.renderer]` to support collapsible resume sections using HTML `<details>` and `<summary>` tags. This allows for clean, interactive experience sections without custom CSS.
+
+### Theme Updates
 
 The hugo-coder theme is configured as a git submodule. To update to the latest version:
 

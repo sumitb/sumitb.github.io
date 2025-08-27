@@ -1,10 +1,13 @@
 baseURL = "https://sumitb.github.io/"
-languageCode = "en-us"
 title = "Sumit Bindal"
 theme = "hugo-coder"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+enableEmoji = true
+
 Copyright = "© Sumit Bindal 2025"
 canonifyurls = true
-defaultcontentlanguage = "en"
+
 [pagination]
 pagerSize = 20
 
@@ -12,19 +15,27 @@ pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
 author = "Sumit Bindal"
-description = "Enter your personal description"
+description = "Sumit Bindal's personal website"
 keywords = "blog,developer,personal"
+info = ["Sr. Software Engineer", "Builder"]
 authorlocation = "authorlocation"
 cover = "images/cover.png"
 ## save the image you want to use as background picture in directory "./static/images"
 logo = "images/logo.png"
 ## save the image you want to use as website logo in directory "./static/images"(delete this line when editing)
+favicon = "images/favicon.svg"
+avatar = "images/avatar.jpg"
 githubName = "sumitb"
 linkedinName = "sumitbindal"
 #email = "your email"
-hideHUGOSupport = false
+hideHUGOSupport = true
 
 colorScheme = "auto"
 hidecolorschemetoggle = false
@@ -32,40 +43,47 @@ hidecolorschemetoggle = false
 # Social links
 [[params.social]]
   name = "Github"
-  icon = "fa fa-github fa-2x"
+  icon = "fa-brands fa-github fa-2x"
   weight = 1
   url = "https://github.com/sumitb/"
+
 [[params.social]]
   name = "Gitlab"
-  icon = "fa fa-gitlab fa-2x"
+  icon = "fa-brands fa-gitlab fa-2x"
   weight = 2
   url = "https://gitlab.com/sumitb/"
+
 [[params.social]]
-  name = "Twitter"
-  icon = "fa fa-twitter fa-2x"
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 2
+  url = "https://linkedin.com/in/sumitbindal/"
+
+[[params.social]]
+  name = "BlueSky"
+  icon = "fa-brands fa-bluesky fa-2x"
   weight = 3
-  url = "https://twitter.com/sumit_bindal/"
-
-[[menu.main]]  # here are the buttons on the menu
-name = "Home" # Button will display as "Home"
-weight = 100 # the weight decides the position of the button (higher or lower)
-identifier = "home"
-pre = "<br />"
-url = "/"
+  url = "https://bsky.app/profile/sumitb.bsky.social"
 
 [[menu.main]]
-name = "Contact"
-weight = 0
-identifier = "contact" # this button will refer to a markdown file named "contact" in the content folder
-pre = "<br />"
+name = "Resume"
+weight = 1
+url = "/resume"
+
+[[menu.main]]
+name = "Projects"
+weight = 2
+url = "/projects"
+
+[[menu.main]]
+name = "Writings"
+url = "/posts"
+weight = 3
+
+[[menu.main]]
+name = "Contact Me"
+weight = 5
 url = "/contact"
-
-[[menu.main]]
-name = "Blog"
-identifier = "blog" # this page will refer to a markdown file named "blog" in the content folder
-pre = "<br />"
-url = "/post"
-weight = 40
 
 [permalinks]
 post = "/:slug/"
