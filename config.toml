@@ -2,7 +2,7 @@ baseURL = "https://sumitb.github.io/"
 languageCode = "en-us"
 title = "Sumit Bindal"
 theme = "hugo-coder"
-Copyright = "© Sumit Bindal 2021"
+Copyright = "© Sumit Bindal 2025"
 canonifyurls = true
 defaultcontentlanguage = "en"
 [pagination]
