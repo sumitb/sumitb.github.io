@@ -74,7 +74,7 @@ Senior Software Engineer with 12+ years of experience building distributed syste
 
 *Technologies*  
 <i class="fa-solid fa-cloud"></i> `OCI` <i class="fa-brands fa-aws"></i> `AWS` ☸️ `Kubernetes` <i class="fa-solid fa-layer-group"></i> `Terraform` <i class="fa-brands fa-docker"></i> `Docker` <i class="fa-solid fa-cubes"></i> `Microservices Architecture`  
-<i class="fa-solid fa-exchange-alt"></i> `RESTful APIs`
+<i class="fa-solid fa-chart-area"></i> `Grafana` <i class="fa-solid fa-pager"></i> `PagerDuty` <i class="fa-solid fa-exchange-alt"></i> `RESTful APIs`
 
 *Relevant Coursework*  
 📚 `Operating Systems` 💾 `Storage Systems` 🧮 `Analysis of Algorithms` 🔒 `System Security`  

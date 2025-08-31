@@ -65,6 +65,12 @@ hidecolorschemetoggle = false
   weight = 3
   url = "https://bsky.app/profile/sumitb.bsky.social"
 
+[[params.social]]
+  name = "Substack"
+  icon = "fa-solid fa-newspaper fa-2x"
+  weight = 4
+  url = "https://sumitb463797.substack.com/"
+
 [[menu.main]]
 name = "Resume"
 weight = 1
@@ -80,10 +86,6 @@ name = "Writings"
 url = "/posts"
 weight = 3
 
-[[menu.main]]
-name = "Contact Me"
-weight = 5
-url = "/contact"
 
 [permalinks]
 post = "/:slug/"
