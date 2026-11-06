@@ -5,10 +5,12 @@ date = 2026-11-05
 draft = false
 +++
 
-<!-- Add new entries at the top, using the same format. -->
+<!-- Add new entries at the top, using the same format.
+     Backup: "archived copy" points to the Wayback Machine. To capture a new article,
+     open https://web.archive.org/save/<article-url> once. -->
 
 ### 📅 2026-11-05
-[Dense in Depth: Rethinking Security When Vulns Are Everywhere](https://medium.com/@TalBeerySec/dense-in-depth-rethinking-security-when-vulns-are-everywhere-229dbd3e8477) - Tal Be'ery, Medium
+[Dense in Depth: Rethinking Security When Vulns Are Everywhere](https://medium.com/@TalBeerySec/dense-in-depth-rethinking-security-when-vulns-are-everywhere-229dbd3e8477) - Tal Be'ery, Medium · [archived copy](https://web.archive.org/web/https://medium.com/@TalBeerySec/dense-in-depth-rethinking-security-when-vulns-are-everywhere-229dbd3e8477)
 
 ### 📅 2025-09-14
-[Behind the Scenes: NVIDIA GB200 NVL72 and OCI APIs](https://blogs.oracle.com/cloud-infrastructure/post/behind-the-scenes-nvidia-gb200-nvl72-oci-apis) - Oracle Cloud Infrastructure Blog
+[Behind the Scenes: NVIDIA GB200 NVL72 and OCI APIs](https://blogs.oracle.com/cloud-infrastructure/post/behind-the-scenes-nvidia-gb200-nvl72-oci-apis) - Oracle Cloud Infrastructure Blog · [archived copy](https://web.archive.org/web/https://blogs.oracle.com/cloud-infrastructure/post/behind-the-scenes-nvidia-gb200-nvl72-oci-apis)
