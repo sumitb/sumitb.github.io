@@ -86,6 +86,11 @@ name = "Writings"
 url = "/posts"
 weight = 3
 
+[[menu.main]]
+name = "Reading"
+url = "/reading"
+weight = 4
+
 
 [permalinks]
 post = "/:slug/"

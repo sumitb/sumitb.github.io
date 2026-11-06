@@ -13,5 +13,4 @@ series = []
 
 ## Readings
 
-### 📅 2025-09-14
-[Behind the Scenes: NVIDIA GB200 NVL72 and OCI APIs](https://blogs.oracle.com/cloud-infrastructure/post/behind-the-scenes-nvidia-gb200-nvl72-oci-apis) - Oracle Cloud Infrastructure Blog
+My reading list now lives on its own page: [Reading](/reading/).
